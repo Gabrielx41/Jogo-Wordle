@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="497.0" prefWidth="544.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projeto.RankingController">
+   <center>
+      <GridPane fx:id="gridPane" prefHeight="413.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="10.0" />
+         </padding>
+         <children>
+            <Label fx:id="labTop1" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" textFill="WHITE">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Gill Sans MT" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop2" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" textFill="WHITE" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="labTop10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-border-color: #F0FFFF;" textAlignment="CENTER" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Comic Sans MS" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="86.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labRanking" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="87.0" prefWidth="600.0" text="Top 10" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="42.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="rankinginfo" fitHeight="33.0" fitWidth="39.0" layoutX="69.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@info.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

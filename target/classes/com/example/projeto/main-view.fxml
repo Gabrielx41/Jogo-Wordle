@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2F4F4F;" stylesheets="@estilo.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projeto.MainController">
+    <center>
+        <AnchorPane prefHeight="225.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text fill="WHITE" layoutX="239.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wordle" wrappingWidth="121.18475341796875">
+                    <font>
+                        <Font name="Impact" size="39.0" />
+                    </font>
+                </Text>
+                <Button fx:id="botaoJogar" layoutX="245.0" layoutY="84.0" mnemonicParsing="false" onAction="#trocarView" prefHeight="44.0" prefWidth="110.0" styleClass="meu-botao" text="Jogar">
+                    <font>
+                        <Font name="Arial" size="18.0" />
+                    </font>
+                </Button>
+                <Label layoutX="218.0" layoutY="165.0" prefHeight="18.0" prefWidth="178.0" textFill="WHITE">
+                    <font>
+                        <Font name="Arial" size="16.0" />
+                    </font>
+            </Label>
+                <Button layoutX="262.0" layoutY="168.0" mnemonicParsing="false" onAction="#trocarViewToRanking" styleClass="meu-botao" text="Ranking" />
+            </children>
+        </AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="107.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="Portugal" fitHeight="50.0" fitWidth="89.0" layoutX="125.0" layoutY="29.0" onMouseClicked="#selecionarIdiomaPortugues" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@portugalflag.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="Ingles" fitHeight="50.0" fitWidth="85.0" layoutX="262.0" layoutY="29.0" onMouseClicked="#selecionarIdiomaIngles" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@1280px-Flag_of_the_United_Kingdom_(2-3).svg.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="Frances" fitHeight="50.0" fitWidth="76.0" layoutX="399.0" layoutY="29.0" onMouseClicked="#selecionarIdiomaFrances" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@transferir (2).png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+    <bottom>
+        <AnchorPane prefHeight="66.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <GridPane layoutX="40.0" layoutY="18.0" prefHeight="12.0" prefWidth="518.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="facilButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selecionarNivel" prefHeight="30.0" prefWidth="85.0" styleClass="meu-botao" text="Médio" GridPane.columnIndex="2">
+                            <GridPane.margin>
+                                <Insets left="2.0" right="2.0" />
+                            </GridPane.margin></Button>
+                        <Button fx:id="medioButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selecionarNivel" prefHeight="26.0" prefWidth="28.0" styleClass="meu-botao" text="Difícil" GridPane.columnIndex="3">
+                            <GridPane.margin>
+                                <Insets left="2.0" right="2.0" />
+                            </GridPane.margin></Button>
+                        <Button fx:id="dificilButton" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selecionarNivel" prefHeight="26.0" prefWidth="26.0" styleClass="meu-botao" text="Muito Difícil" GridPane.columnIndex="4">
+                            <GridPane.margin>
+                                <Insets left="2.0" right="2.0" />
+                            </GridPane.margin></Button>
+                        <Button fx:id="muitoFacil4Button" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selecionarNivel" prefHeight="30.0" prefWidth="85.0" styleClass="meu-botao" text="Fácil" GridPane.columnIndex="1">
+                            <GridPane.margin>
+                                <Insets left="2.0" right="2.0" />
+                            </GridPane.margin></Button>
+                        <Button fx:id="muitoFacil3Button" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selecionarNivel" prefHeight="30.0" prefWidth="85.0" styleClass="meu-botao" text="Muito Fácil">
+                            <GridPane.margin>
+                                <Insets left="2.0" right="2.0" />
+                            </GridPane.margin></Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </GridPane>
+            </children>
+        </AnchorPane>
+    </bottom>
+</BorderPane>
